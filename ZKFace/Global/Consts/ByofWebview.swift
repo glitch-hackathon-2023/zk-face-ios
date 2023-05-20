@@ -8,5 +8,5 @@
 import Foundation
 
 class ByofWebview {
-    static let baseUrl = "https://zk-face-webview.vercel.app/"
+    static let baseUrl = "https://zk-face-webview.vercel.app"
 }

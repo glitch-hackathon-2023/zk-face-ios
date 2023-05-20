@@ -44,7 +44,7 @@ class EmbeddedWebViewController: UIViewController {
 extension EmbeddedWebViewController {
     private func setLayout() {
         navigationController?.isNavigationBarHidden = isNavigationBarHidden
-        title = "wallet1 (0x1287...dfd)"
+        navigationItem.title = "wallet1 (0x1287...dfd)"
     }
     
     private func setWebView() {
@@ -90,10 +90,10 @@ extension EmbeddedWebViewController {
         switch type {
         case .onClickImportYourWallet:
             print("onClickImportYourWallet")
-            navigationController?.pushViewController(EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/main"), animated: true)
+            present(FaceCameraViewController(type: .wallet), animated: true)
         case .onClickCreateNewWallet:
             print("onClickCreateNewWallet")
-            navigationController?.pushViewController(EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/main"), animated: true)
+            navigationController?.pushViewController(FaceCameraViewController(type: .wallet), animated: true)
         case .onClickSend:
             print("onClickSend")
             navigationController?.pushViewController(EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/send"), animated: true)
@@ -102,7 +102,7 @@ extension EmbeddedWebViewController {
             navigationController?.pushViewController(EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/confirm"), animated: true)
         case .onClickConfirm:
             print("onClickConfirm")
-            navigationController?.pushViewController(FaceCameraViewController(), animated: true)
+            navigationController?.pushViewController(FaceCameraViewController(type: .transaction), animated: true)
         }
     }
 }
