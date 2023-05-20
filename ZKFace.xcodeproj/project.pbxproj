@@ -84,7 +84,6 @@
 		B1631F5A2A175F850050974F /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		B1631F5C2A175F9C0050974F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		B1631F5F2A175FF50050974F /* .keep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .keep; sourceTree = "<group>"; };
-		B1631F682A1760310050974F /* .keep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .keep; sourceTree = "<group>"; };
 		B1631F772A17BC180050974F /* vgg_face_model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = vgg_face_model.mlmodel; sourceTree = "<group>"; };
 		B1631F7A2A17BC910050974F /* FaceInferenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceInferenceManager.swift; sourceTree = "<group>"; };
 		B1631F7C2A17C7E50050974F /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
@@ -271,7 +270,6 @@
 		B1631F672A1760210050974F /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B1631F682A1760310050974F /* .keep */,
 				B1631FA82A1915160050974F /* ByofTabBarController.swift */,
 			);
 			path = Components;
@@ -580,6 +578,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BYOF;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -634,6 +633,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BYOF;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
