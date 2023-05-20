@@ -99,8 +99,30 @@ extension EmbeddedWebViewController: WKNavigationDelegate {
 extension EmbeddedWebViewController: WKUIDelegate {
     
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
-        
-    }
+          let completionHandlerWrapper = CompletionHandlerWrapper(completionHandler: completionHandler, defaultValue: Void())
+          /* custom UI */
+        let alertController = UIAlertController(title: message, message: nil, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "확인", style: .default) { _ in
+            print("확인")
+        })
+        alertController.addAction(UIAlertAction(title: "취소", style: .cancel) { _ in
+            print("취소")
+        })
+        present(alertController, animated: true, completion: nil)
+      }
+      
+      func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
+        let completionHandlerWrapper = CompletionHandlerWrapper(completionHandler: completionHandler, defaultValue: false)
+        let alertController = UIAlertController(title: message, message: nil, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "확인", style: .default) { _ in completionHandlerWrapper.respondHandler(true) })
+        alertController.addAction(UIAlertAction(title: "취소", style: .cancel) { _ in completionHandlerWrapper.respondHandler(false) })
+        present(alertController, animated: true, completion: nil)
+      }
+      
+      func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
+        let completionHandlerWrapper = CompletionHandlerWrapper(completionHandler: completionHandler, defaultValue: "")
+        /* custom UI */
+      }
     
 }
 
@@ -110,4 +132,23 @@ extension EmbeddedWebViewController: WKScriptMessageHandler {
         
         print(message.name)
     }
+}
+
+class CompletionHandlerWrapper<Element> {
+  private var completionHandler: ((Element) -> Void)?
+  private let defaultValue: Element
+
+  init(completionHandler: @escaping ((Element) -> Void), defaultValue: Element) {
+    self.completionHandler = completionHandler
+    self.defaultValue = defaultValue
+  }
+
+  func respondHandler(_ value: Element) {
+    completionHandler?(value)
+    completionHandler = nil
+  }
+
+  deinit {
+    respondHandler(defaultValue)
+  }
 }
