@@ -34,6 +34,8 @@
 		B1631F9B2A1890220050974F /* EmbeddedWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1631F992A1890220050974F /* EmbeddedWebViewController.xib */; };
 		B1631FA02A18A2470050974F /* FaceCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631F9E2A18A2470050974F /* FaceCameraViewController.swift */; };
 		B1631FA12A18A2470050974F /* FaceCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1631F9F2A18A2470050974F /* FaceCameraViewController.xib */; };
+		B1631FA32A18F6B20050974F /* WebviewBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631FA22A18F6B20050974F /* WebviewBridge.swift */; };
+		B1631FA52A18FAF60050974F /* ByofWebview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631FA42A18FAF60050974F /* ByofWebview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +82,6 @@
 		B1631F5A2A175F850050974F /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		B1631F5C2A175F9C0050974F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		B1631F5F2A175FF50050974F /* .keep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .keep; sourceTree = "<group>"; };
-		B1631F622A1760020050974F /* .keep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .keep; sourceTree = "<group>"; };
 		B1631F682A1760310050974F /* .keep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .keep; sourceTree = "<group>"; };
 		B1631F772A17BC180050974F /* vgg_face_model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = vgg_face_model.mlmodel; sourceTree = "<group>"; };
 		B1631F7A2A17BC910050974F /* FaceInferenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceInferenceManager.swift; sourceTree = "<group>"; };
@@ -89,6 +90,8 @@
 		B1631F992A1890220050974F /* EmbeddedWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmbeddedWebViewController.xib; sourceTree = "<group>"; };
 		B1631F9E2A18A2470050974F /* FaceCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceCameraViewController.swift; sourceTree = "<group>"; };
 		B1631F9F2A18A2470050974F /* FaceCameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaceCameraViewController.xib; sourceTree = "<group>"; };
+		B1631FA22A18F6B20050974F /* WebviewBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewBridge.swift; sourceTree = "<group>"; };
+		B1631FA42A18FAF60050974F /* ByofWebview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByofWebview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,7 +249,8 @@
 		B1631F612A175FF80050974F /* Consts */ = {
 			isa = PBXGroup;
 			children = (
-				B1631F622A1760020050974F /* .keep */,
+				B1631FA22A18F6B20050974F /* WebviewBridge.swift */,
+				B1631FA42A18FAF60050974F /* ByofWebview.swift */,
 			);
 			path = Consts;
 			sourceTree = "<group>";
@@ -454,6 +458,8 @@
 				B1631F482A175C780050974F /* UIView+Extension.swift in Sources */,
 				B1631F4A2A175D5C0050974F /* UIButton+Extension.swift in Sources */,
 				B1631FA02A18A2470050974F /* FaceCameraViewController.swift in Sources */,
+				B1631FA52A18FAF60050974F /* ByofWebview.swift in Sources */,
+				B1631FA32A18F6B20050974F /* WebviewBridge.swift in Sources */,
 				B1631F5B2A175F860050974F /* UITextField+Extension.swift in Sources */,
 				B1631F5D2A175F9C0050974F /* Date+Extension.swift in Sources */,
 				B1631F7D2A17C7E50050974F /* UIImage+Extension.swift in Sources */,

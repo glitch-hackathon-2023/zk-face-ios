@@ -18,11 +18,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
         guard let scene = (scene as? UIWindowScene) else { return }
-        let url = "https://zk-face-webview.vercel.app/"
 //        let url = "https://byof-web-view-z1q9.vercel.app/"
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: EmbeddedWebViewController(webUrl: url, isNavigationBarHidden: true))
+        window?.rootViewController = UINavigationController(rootViewController: EmbeddedWebViewController(webUrl: ByofWebview.baseUrl, isNavigationBarHidden: true))
         window?.windowScene = scene
         window?.makeKeyAndVisible()
     }
