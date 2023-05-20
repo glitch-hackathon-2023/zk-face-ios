@@ -10,15 +10,30 @@ import AVFoundation
 
 class FaceCameraViewController: UIViewController {
     
+    let faceRecognitionType: FaceRecognitionType
+    
     var captureSession: AVCaptureSession?
     var photoOutput: AVCapturePhotoOutput?
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     
+    var parentVC: UIViewController?
+    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    init(type: FaceRecognitionType) {
+        self.faceRecognitionType = type
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setLayout()
         setCamera()
     }
     
@@ -29,6 +44,10 @@ class FaceCameraViewController: UIViewController {
 }
 
 extension FaceCameraViewController {
+    private func setLayout() {
+        modalPresentationStyle = .fullScreen
+    }
+    
     private func setCamera() {
         captureSession = AVCaptureSession()
         captureSession?.beginConfiguration()
@@ -62,8 +81,19 @@ extension FaceCameraViewController {
     }
     
     private func moveToNextVC() {
-        let vc = EmbeddedWebViewController(webUrl: "https://byof-web-view-z1q9.vercel.app/main", isNavigationBarHidden: false)
-        navigationController?.pushViewController(vc, animated: true)
+        switch faceRecognitionType {
+        case .wallet:
+            let vc = ByofTabBarController()
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: false)
+        case .transaction:
+            dismiss(animated: true) {
+                if let parentVC = self.parentVC {
+                    parentVC.navigationController?.pushViewController(EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/success"), animated: true)
+                }
+            }
+        }
+        
     }
     
     private func setLoading(_ isLoading: Bool) {

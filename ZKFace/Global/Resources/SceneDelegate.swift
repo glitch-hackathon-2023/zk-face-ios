@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: EmbeddedWebViewController(webUrl: "https://byof-web-view-z1q9.vercel.app/", isNavigationBarHidden: true))
+        window?.rootViewController = UINavigationController(rootViewController: EmbeddedWebViewController(webUrl: ByofWebview.baseUrl, isNavigationBarHidden: true))
         window?.windowScene = scene
         window?.makeKeyAndVisible()
     }

@@ -34,6 +34,10 @@
 		B1631F9B2A1890220050974F /* EmbeddedWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1631F992A1890220050974F /* EmbeddedWebViewController.xib */; };
 		B1631FA02A18A2470050974F /* FaceCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631F9E2A18A2470050974F /* FaceCameraViewController.swift */; };
 		B1631FA12A18A2470050974F /* FaceCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1631F9F2A18A2470050974F /* FaceCameraViewController.xib */; };
+		B1631FA32A18F6B20050974F /* WebviewBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631FA22A18F6B20050974F /* WebviewBridge.swift */; };
+		B1631FA52A18FAF60050974F /* ByofWebview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631FA42A18FAF60050974F /* ByofWebview.swift */; };
+		B1631FA72A1903400050974F /* FaceRecognitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631FA62A1903400050974F /* FaceRecognitionType.swift */; };
+		B1631FA92A1915160050974F /* ByofTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631FA82A1915160050974F /* ByofTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +84,6 @@
 		B1631F5A2A175F850050974F /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		B1631F5C2A175F9C0050974F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		B1631F5F2A175FF50050974F /* .keep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .keep; sourceTree = "<group>"; };
-		B1631F622A1760020050974F /* .keep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .keep; sourceTree = "<group>"; };
-		B1631F682A1760310050974F /* .keep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .keep; sourceTree = "<group>"; };
 		B1631F772A17BC180050974F /* vgg_face_model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = vgg_face_model.mlmodel; sourceTree = "<group>"; };
 		B1631F7A2A17BC910050974F /* FaceInferenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceInferenceManager.swift; sourceTree = "<group>"; };
 		B1631F7C2A17C7E50050974F /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
@@ -89,6 +91,10 @@
 		B1631F992A1890220050974F /* EmbeddedWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmbeddedWebViewController.xib; sourceTree = "<group>"; };
 		B1631F9E2A18A2470050974F /* FaceCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceCameraViewController.swift; sourceTree = "<group>"; };
 		B1631F9F2A18A2470050974F /* FaceCameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaceCameraViewController.xib; sourceTree = "<group>"; };
+		B1631FA22A18F6B20050974F /* WebviewBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewBridge.swift; sourceTree = "<group>"; };
+		B1631FA42A18FAF60050974F /* ByofWebview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByofWebview.swift; sourceTree = "<group>"; };
+		B1631FA62A1903400050974F /* FaceRecognitionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecognitionType.swift; sourceTree = "<group>"; };
+		B1631FA82A1915160050974F /* ByofTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByofTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,7 +252,9 @@
 		B1631F612A175FF80050974F /* Consts */ = {
 			isa = PBXGroup;
 			children = (
-				B1631F622A1760020050974F /* .keep */,
+				B1631FA22A18F6B20050974F /* WebviewBridge.swift */,
+				B1631FA42A18FAF60050974F /* ByofWebview.swift */,
+				B1631FA62A1903400050974F /* FaceRecognitionType.swift */,
 			);
 			path = Consts;
 			sourceTree = "<group>";
@@ -262,7 +270,7 @@
 		B1631F672A1760210050974F /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B1631F682A1760310050974F /* .keep */,
+				B1631FA82A1915160050974F /* ByofTabBarController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -454,12 +462,16 @@
 				B1631F482A175C780050974F /* UIView+Extension.swift in Sources */,
 				B1631F4A2A175D5C0050974F /* UIButton+Extension.swift in Sources */,
 				B1631FA02A18A2470050974F /* FaceCameraViewController.swift in Sources */,
+				B1631FA52A18FAF60050974F /* ByofWebview.swift in Sources */,
+				B1631FA32A18F6B20050974F /* WebviewBridge.swift in Sources */,
 				B1631F5B2A175F860050974F /* UITextField+Extension.swift in Sources */,
 				B1631F5D2A175F9C0050974F /* Date+Extension.swift in Sources */,
+				B1631FA72A1903400050974F /* FaceRecognitionType.swift in Sources */,
 				B1631F7D2A17C7E50050974F /* UIImage+Extension.swift in Sources */,
 				B1631F792A17BC180050974F /* vgg_face_model.mlmodel in Sources */,
 				B1631F0D2A1759EA0050974F /* SceneDelegate.swift in Sources */,
 				B1631F7B2A17BC910050974F /* FaceInferenceManager.swift in Sources */,
+				B1631FA92A1915160050974F /* ByofTabBarController.swift in Sources */,
 				B1631F562A175F230050974F /* UICollectionViewCell+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,6 +578,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BYOF;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -620,6 +633,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BYOF;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
