@@ -27,6 +27,9 @@
 		B1631F592A175F470050974F /* Notification.Name+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631F582A175F470050974F /* Notification.Name+Extension.swift */; };
 		B1631F5B2A175F860050974F /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631F5A2A175F850050974F /* UITextField+Extension.swift */; };
 		B1631F5D2A175F9C0050974F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631F5C2A175F9C0050974F /* Date+Extension.swift */; };
+		B1631F792A17BC180050974F /* vgg_face_model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B1631F772A17BC180050974F /* vgg_face_model.mlmodel */; };
+		B1631F7B2A17BC910050974F /* FaceInferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631F7A2A17BC910050974F /* FaceInferenceManager.swift */; };
+		B1631F7D2A17C7E50050974F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631F7C2A17C7E50050974F /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,8 +78,10 @@
 		B1631F5C2A175F9C0050974F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		B1631F5F2A175FF50050974F /* .keep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .keep; sourceTree = "<group>"; };
 		B1631F622A1760020050974F /* .keep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .keep; sourceTree = "<group>"; };
-		B1631F652A1760180050974F /* .keep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .keep; sourceTree = "<group>"; };
 		B1631F682A1760310050974F /* .keep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .keep; sourceTree = "<group>"; };
+		B1631F772A17BC180050974F /* vgg_face_model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = vgg_face_model.mlmodel; sourceTree = "<group>"; };
+		B1631F7A2A17BC910050974F /* FaceInferenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceInferenceManager.swift; sourceTree = "<group>"; };
+		B1631F7C2A17C7E50050974F /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +192,7 @@
 				B1631F582A175F470050974F /* Notification.Name+Extension.swift */,
 				B1631F5A2A175F850050974F /* UITextField+Extension.swift */,
 				B1631F5C2A175F9C0050974F /* Date+Extension.swift */,
+				B1631F7C2A17C7E50050974F /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 		B1631F422A175BA30050974F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B1631F742A17BC180050974F /* com.apple.CoreML */,
 				B1631F0A2A1759EA0050974F /* AppDelegate.swift */,
 				B1631F0C2A1759EA0050974F /* SceneDelegate.swift */,
 				B1631F132A1759EB0050974F /* Assets.xcassets */,
@@ -239,7 +246,7 @@
 		B1631F642A1760050050974F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				B1631F652A1760180050974F /* .keep */,
+				B1631F7A2A17BC910050974F /* FaceInferenceManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -250,6 +257,14 @@
 				B1631F682A1760310050974F /* .keep */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		B1631F742A17BC180050974F /* com.apple.CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				B1631F772A17BC180050974F /* vgg_face_model.mlmodel */,
+			);
+			path = com.apple.CoreML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,7 +410,10 @@
 				B1631F4A2A175D5C0050974F /* UIButton+Extension.swift in Sources */,
 				B1631F5B2A175F860050974F /* UITextField+Extension.swift in Sources */,
 				B1631F5D2A175F9C0050974F /* Date+Extension.swift in Sources */,
+				B1631F7D2A17C7E50050974F /* UIImage+Extension.swift in Sources */,
+				B1631F792A17BC180050974F /* vgg_face_model.mlmodel in Sources */,
 				B1631F0D2A1759EA0050974F /* SceneDelegate.swift in Sources */,
+				B1631F7B2A17BC910050974F /* FaceInferenceManager.swift in Sources */,
 				B1631F562A175F230050974F /* UICollectionViewCell+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
