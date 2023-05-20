@@ -62,7 +62,7 @@ extension ByofTabBarController {
     }
     
     private func createTwo() -> UINavigationController {
-        let vc = EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/send")
+        let vc = EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/swap")
         let navigationVC = UINavigationController(rootViewController: vc)
         
         vc.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "repeat"), tag: 0)
@@ -71,7 +71,7 @@ extension ByofTabBarController {
     }
     
     private func createThree() -> UINavigationController {
-        let vc = EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/zkid")
+        let vc = EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/zkId")
         let navigationVC = UINavigationController(rootViewController: vc)
         
         vc.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "person.circle.fill"), tag: 0)

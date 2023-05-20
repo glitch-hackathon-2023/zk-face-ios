@@ -16,6 +16,8 @@ class FaceCameraViewController: UIViewController {
     var photoOutput: AVCapturePhotoOutput?
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     
+    var parentVC: UIViewController?
+    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     init(type: FaceRecognitionType) {
@@ -85,7 +87,11 @@ extension FaceCameraViewController {
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: false)
         case .transaction:
-            navigationController?.pushViewController(EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/success"), animated: true)
+            dismiss(animated: true) {
+                if let parentVC = self.parentVC {
+                    parentVC.navigationController?.pushViewController(EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/success"), animated: true)
+                }
+            }
         }
         
     }

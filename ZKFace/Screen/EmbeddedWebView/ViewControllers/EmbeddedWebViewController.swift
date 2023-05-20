@@ -93,16 +93,18 @@ extension EmbeddedWebViewController {
             present(FaceCameraViewController(type: .wallet), animated: true)
         case .onClickCreateNewWallet:
             print("onClickCreateNewWallet")
-            navigationController?.pushViewController(FaceCameraViewController(type: .wallet), animated: true)
+            present(FaceCameraViewController(type: .wallet), animated: true)
         case .onClickSend:
             print("onClickSend")
-            navigationController?.pushViewController(EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/send"), animated: true)
+            navigationController?.pushViewController(EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/swap"), animated: true)
         case .onClickNext:
             print("onClickNext")
             navigationController?.pushViewController(EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/confirm"), animated: true)
         case .onClickConfirm:
             print("onClickConfirm")
-            navigationController?.pushViewController(FaceCameraViewController(type: .transaction), animated: true)
+            let vc = FaceCameraViewController(type: .transaction)
+            vc.parentVC = self
+            present(vc, animated: true)
         }
     }
 }
