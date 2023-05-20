@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FaceCameraViewController" customModule="ZKFace" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="Zj6-ul-FPz" id="TMJ-bu-SWZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -42,6 +43,9 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Zj6-ul-FPz">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -50,10 +54,12 @@
                 <constraint firstAttribute="bottom" secondItem="cbg-ps-lBU" secondAttribute="bottom" id="4mJ-8E-HlN"/>
                 <constraint firstItem="cbg-ps-lBU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6UE-HS-eGW"/>
                 <constraint firstAttribute="trailing" secondItem="cbg-ps-lBU" secondAttribute="trailing" id="A2I-Su-P80"/>
+                <constraint firstItem="Zj6-ul-FPz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="GAj-cI-8hI"/>
                 <constraint firstItem="GH9-LE-j31" firstAttribute="centerX" secondItem="bmt-U4-LQP" secondAttribute="centerX" id="HcU-3R-MSb"/>
                 <constraint firstItem="bmt-U4-LQP" firstAttribute="top" secondItem="GH9-LE-j31" secondAttribute="bottom" constant="24" id="NoN-ST-QjN"/>
                 <constraint firstItem="bmt-U4-LQP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hhu-8s-y5W"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bmt-U4-LQP" secondAttribute="bottom" constant="30" id="vcy-By-K02"/>
+                <constraint firstItem="Zj6-ul-FPz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zt2-1x-o7Y"/>
             </constraints>
             <point key="canvasLocation" x="-11" y="-12"/>
         </view>

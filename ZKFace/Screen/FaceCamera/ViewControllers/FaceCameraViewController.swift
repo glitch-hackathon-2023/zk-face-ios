@@ -14,6 +14,8 @@ class FaceCameraViewController: UIViewController {
     var photoOutput: AVCapturePhotoOutput?
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +24,7 @@ class FaceCameraViewController: UIViewController {
     
     @IBAction func onClickShot(_ sender: Any) {
         photoOutput?.capturePhoto(with: AVCapturePhotoSettings(), delegate: self as AVCapturePhotoCaptureDelegate)
+        setLoading(true)
     }
 }
 
@@ -62,6 +65,15 @@ extension FaceCameraViewController {
         let vc = EmbeddedWebViewController(webUrl: "https://byof-web-view-z1q9.vercel.app/main", isNavigationBarHidden: false)
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    private func setLoading(_ isLoading: Bool) {
+        if isLoading {
+            activityIndicator.isHidden = false
+            activityIndicator.startAnimating()
+        } else {
+            activityIndicator.stopAnimating()
+        }
+    }
 }
 
 extension FaceCameraViewController: AVCapturePhotoCaptureDelegate {
@@ -75,6 +87,7 @@ extension FaceCameraViewController: AVCapturePhotoCaptureDelegate {
         
         _ = try? FaceInferenceManager.predict(imageArray)
         
+        setLoading(false)
         moveToNextVC()
     }
 }
