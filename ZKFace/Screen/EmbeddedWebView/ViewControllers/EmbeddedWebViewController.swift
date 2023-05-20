@@ -34,8 +34,17 @@ class EmbeddedWebViewController: UIViewController {
     }
     
     @IBAction func onClickCamera(_ sender: Any) {
-        let vc = FaceCameraViewController()
-        navigationController?.pushViewController(vc, animated: true)
+//        let vc = FaceCameraViewController()
+//        navigationController?.pushViewController(vc, animated: true)
+        
+        webView.evaluateJavaScript("test()") { result, error in
+            if let result = result {
+                print(result)
+            }
+            if let error = error {
+                print(error)
+            }
+        }
     }
 }
 
@@ -56,6 +65,9 @@ extension EmbeddedWebViewController {
         let configuration = WKWebViewConfiguration()
         configuration.preferences = preferences
         configuration.userContentController = contentController
+        
+        let userScript = WKUserScript(source: "test()", injectionTime: .atDocumentEnd, forMainFrameOnly: true)
+        contentController.addUserScript(userScript)
         
         let components = URLComponents(string: webUrl)!
 //        components.queryItems = [ URLQueryItem(name: "query", value: search) ]
