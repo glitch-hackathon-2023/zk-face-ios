@@ -32,6 +32,11 @@ class EmbeddedWebViewController: UIViewController {
         setLayout()
         setWebView()
     }
+    
+    @IBAction func onClickCamera(_ sender: Any) {
+        let vc = FaceCameraViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension EmbeddedWebViewController {

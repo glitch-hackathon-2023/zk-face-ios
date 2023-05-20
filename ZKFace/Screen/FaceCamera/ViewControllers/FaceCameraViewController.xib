@@ -9,10 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmbeddedWebViewController" customModule="ZKFace" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FaceCameraViewController" customModule="ZKFace" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="webView" destination="WoM-dX-3mI" id="pJL-k4-usy"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -20,16 +19,11 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <wkWebView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WoM-dX-3mI">
-                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <wkWebViewConfiguration key="configuration">
-                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                        <wkPreferences key="preferences"/>
-                    </wkWebViewConfiguration>
-                </wkWebView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5T-Ve-weN">
-                    <rect key="frame" x="328" y="753" width="41" height="41"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faceOval" translatesAutoresizingMaskIntoConstraints="NO" id="cbg-ps-lBU">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmt-U4-LQP">
+                    <rect key="frame" x="176" y="747" width="41" height="41"/>
                     <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="gray" title="" cornerStyle="capsule">
@@ -39,25 +33,34 @@
                         <color key="baseBackgroundColor" systemColor="secondaryLabelColor"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="onClickCamera:" destination="-1" eventType="touchUpInside" id="o6e-km-u6r"/>
+                        <action selector="onClickShot:" destination="-1" eventType="touchUpInside" id="zWv-BI-xuZ"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fit your face in the oval" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GH9-LE-j31">
+                    <rect key="frame" x="94" y="705" width="205" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="WoM-dX-3mI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="IHg-b3-F3C"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WoM-dX-3mI" secondAttribute="bottom" id="ccD-FM-fYB"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="y5T-Ve-weN" secondAttribute="bottom" constant="24" id="ckt-93-G3J"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y5T-Ve-weN" secondAttribute="trailing" constant="24" id="hEp-1q-CMC"/>
-                <constraint firstItem="WoM-dX-3mI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jwq-Nv-dyt"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WoM-dX-3mI" secondAttribute="trailing" id="xbn-8u-WXD"/>
+                <constraint firstItem="cbg-ps-lBU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1nq-KT-977"/>
+                <constraint firstAttribute="bottom" secondItem="cbg-ps-lBU" secondAttribute="bottom" id="4mJ-8E-HlN"/>
+                <constraint firstItem="cbg-ps-lBU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6UE-HS-eGW"/>
+                <constraint firstAttribute="trailing" secondItem="cbg-ps-lBU" secondAttribute="trailing" id="A2I-Su-P80"/>
+                <constraint firstItem="GH9-LE-j31" firstAttribute="centerX" secondItem="bmt-U4-LQP" secondAttribute="centerX" id="HcU-3R-MSb"/>
+                <constraint firstItem="bmt-U4-LQP" firstAttribute="top" secondItem="GH9-LE-j31" secondAttribute="bottom" constant="24" id="NoN-ST-QjN"/>
+                <constraint firstItem="bmt-U4-LQP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hhu-8s-y5W"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bmt-U4-LQP" secondAttribute="bottom" constant="30" id="vcy-By-K02"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="-11"/>
+            <point key="canvasLocation" x="-11" y="-12"/>
         </view>
     </objects>
     <resources>
         <image name="camera" catalog="system" width="128" height="93"/>
+        <image name="faceOval" width="360" height="800"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
