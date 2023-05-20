@@ -71,6 +71,12 @@ extension EmbeddedWebViewController: WKNavigationDelegate {
         
         decisionHandler(.allow)
     }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            webView.isHidden = false
+        }
+    }
 }
 
 extension EmbeddedWebViewController: WKUIDelegate {
@@ -78,6 +84,7 @@ extension EmbeddedWebViewController: WKUIDelegate {
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
         
     }
+    
 }
 
 extension EmbeddedWebViewController: WKScriptMessageHandler {
