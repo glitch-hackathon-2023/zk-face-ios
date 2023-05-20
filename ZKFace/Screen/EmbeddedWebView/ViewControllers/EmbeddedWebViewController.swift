@@ -59,7 +59,7 @@ extension EmbeddedWebViewController {
         preferences.javaScriptEnabled = true
         preferences.javaScriptCanOpenWindowsAutomatically = true
         
-        let contentController = WKUserContentController()
+        let contentController = webView.configuration.userContentController
         contentController.add(self, name: "bridge")
         
         let configuration = WKWebViewConfiguration()
@@ -129,8 +129,12 @@ extension EmbeddedWebViewController: WKUIDelegate {
 extension EmbeddedWebViewController: WKScriptMessageHandler {
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        
         print(message.name)
+        
+        if message.name == "bridge", let messageBody = message.body as? String {
+            // Handle the message from the web app
+            print("Received message from Next.js web app:", messageBody)
+        }
     }
 }
 
