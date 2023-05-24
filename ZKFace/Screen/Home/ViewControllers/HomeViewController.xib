@@ -55,6 +55,9 @@
                                 <color key="baseForegroundColor" red="0.1294117719" green="0.19607841970000001" blue="0.71372550729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="onClickSend:" destination="-1" eventType="touchUpInside" id="TWv-uG-lip"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>

@@ -14,7 +14,11 @@ class HomeViewController: UIViewController {
 
         setLayout()
     }
-
+    
+    @IBAction func onClickSend(_ sender: Any) {
+        let vc = SwapViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension HomeViewController {
