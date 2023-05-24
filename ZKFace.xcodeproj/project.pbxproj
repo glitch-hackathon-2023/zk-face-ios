@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1497CCB2A1E64B9009D81D8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1497CC92A1E64B9009D81D8 /* StartViewController.swift */; };
+		B1497CCC2A1E64B9009D81D8 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1497CCA2A1E64B9009D81D8 /* StartViewController.xib */; };
 		B1631F0B2A1759EA0050974F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631F0A2A1759EA0050974F /* AppDelegate.swift */; };
 		B1631F0D2A1759EA0050974F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631F0C2A1759EA0050974F /* SceneDelegate.swift */; };
 		B1631F0F2A1759EA0050974F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631F0E2A1759EA0050974F /* ViewController.swift */; };
@@ -59,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B1497CC92A1E64B9009D81D8 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		B1497CCA2A1E64B9009D81D8 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 		B1631F072A1759EA0050974F /* ZKFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1631F0A2A1759EA0050974F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1631F0C2A1759EA0050974F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +128,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1497CC72A1E64A0009D81D8 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				B1497CC82A1E64A8009D81D8 /* ViewControllers */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		B1497CC82A1E64A8009D81D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1497CC92A1E64B9009D81D8 /* StartViewController.swift */,
+				B1497CCA2A1E64B9009D81D8 /* StartViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		B1631EFE2A1759EA0050974F = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +209,7 @@
 		B1631F3B2A175B290050974F /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				B1497CC72A1E64A0009D81D8 /* Start */,
 				B1631F962A188FF10050974F /* EmbeddedWebView */,
 				B1631F9C2A18A21C0050974F /* FaceCamera */,
 			);
@@ -433,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1631F172A1759EB0050974F /* LaunchScreen.storyboard in Resources */,
+				B1497CCC2A1E64B9009D81D8 /* StartViewController.xib in Resources */,
 				B1631FAE2A1A651D0050974F /* weight.bin in Resources */,
 				B1631F9B2A1890220050974F /* EmbeddedWebViewController.xib in Resources */,
 				B1631FA12A18A2470050974F /* FaceCameraViewController.xib in Resources */,
@@ -479,6 +502,7 @@
 				B1631F5B2A175F860050974F /* UITextField+Extension.swift in Sources */,
 				B1631FAF2A1A651D0050974F /* vgg_face_model.mlmodel in Sources */,
 				B1631F5D2A175F9C0050974F /* Date+Extension.swift in Sources */,
+				B1497CCB2A1E64B9009D81D8 /* StartViewController.swift in Sources */,
 				B1631FA72A1903400050974F /* FaceRecognitionType.swift in Sources */,
 				B1631F7D2A17C7E50050974F /* UIImage+Extension.swift in Sources */,
 				B1631F0D2A1759EA0050974F /* SceneDelegate.swift in Sources */,
