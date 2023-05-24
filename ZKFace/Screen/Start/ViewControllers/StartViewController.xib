@@ -59,6 +59,9 @@
                         <color key="baseForegroundColor" red="0.1294117719" green="0.19607841970000001" blue="0.71372550729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="onClickImportWallet:" destination="-1" eventType="touchUpInside" id="nJz-d6-8E3"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8d-sh-mjr">
                     <rect key="frame" x="24" y="700" width="345" height="42"/>
@@ -77,6 +80,9 @@
                         <color key="baseForegroundColor" red="0.1294117719" green="0.19607841970000001" blue="0.71372550729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="onClickCreateWallet:" destination="-1" eventType="touchUpInside" id="QQE-nT-Vlp"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

@@ -14,4 +14,20 @@ class StartViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func onClickCreateWallet(_ sender: Any) {
+        moveToFaceRecognitionView()
+    }
+    
+    @IBAction func onClickImportWallet(_ sender: Any) {
+        moveToFaceRecognitionView()
+    }
+}
+
+extension StartViewController {
+    private func moveToFaceRecognitionView() {
+        let vc = FaceCameraViewController(type: .wallet)
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
 }
