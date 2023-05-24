@@ -117,7 +117,10 @@ extension FaceCameraViewController: AVCapturePhotoCaptureDelegate {
         
         _ = try? FaceInferenceManager.predict(imageArray)
         
-        setLoading(false)
-        moveToNextVC()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.setLoading(false)
+            self.moveToNextVC()
+        }
     }
 }

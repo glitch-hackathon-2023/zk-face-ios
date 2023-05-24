@@ -17,6 +17,7 @@ class FaceInferenceManager {
         
         let output = try? model.prediction(zero_padding2d_input: imageArray)
         
+        
         print(">>>", output?.Identity.shape)
         
         print(">>>", output?.Identity)

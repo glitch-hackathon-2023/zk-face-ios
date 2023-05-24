@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ZKFace" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6B9-bR-cAV">
+                    <rect key="frame" x="50" y="269.66666666666669" width="293" height="42"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keP-fB-2mX">
+                            <rect key="frame" x="0.0" y="0.0" width="139" height="42"/>
+                            <color key="tintColor" red="0.1294117719" green="0.19607841970000001" blue="0.71372550729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="Deposit">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <directionalEdgeInsets key="contentInsets" top="14" leading="0.0" bottom="14" trailing="0.0"/>
+                                <color key="baseForegroundColor" red="0.1294117719" green="0.19607841970000001" blue="0.71372550729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2x-5p-Yvq">
+                            <rect key="frame" x="154" y="0.0" width="139" height="42"/>
+                            <color key="tintColor" red="0.1294117719" green="0.19607841970000001" blue="0.71372550729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="Send">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <directionalEdgeInsets key="contentInsets" top="14" leading="0.0" bottom="14" trailing="0.0"/>
+                                <color key="baseForegroundColor" red="0.1294117719" green="0.19607841970000001" blue="0.71372550729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="onClickSend:" destination="-1" eventType="touchUpInside" id="TWv-uG-lip"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="3E7-hq-FcW"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCF-gS-Ta8">
+                    <rect key="frame" x="24" y="326.66666666666669" width="345" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="uxC-Va-jz9"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" image="polygon-matic-logo" cornerStyle="medium" titleAlignment="automatic">
+                        <attributedString key="attributedTitle">
+                            <fragment content="12.7 MATIC">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="32" name="Helvetica"/>
+                                    <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <directionalEdgeInsets key="contentInsets" top="0.0" leading="30" bottom="0.0" trailing="20"/>
+                        <color key="baseForegroundColor" systemColor="labelColor"/>
+                        <color key="baseBackgroundColor" red="0.1294117719" green="0.19607841970000001" blue="0.71372550729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </buttonConfiguration>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lg-zE-HL9">
+                    <rect key="frame" x="66.666666666666686" y="119" width="260" height="110.66666666666669"/>
+                    <attributedString key="attributedText">
+                        <fragment content="0.9">
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="96" name="Helvetica"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="18" name="Helvetica"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="MATIC">
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="40" name="Helvetica"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6B9-bR-cAV" secondAttribute="trailing" constant="50" id="80F-Oj-Aen"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JCF-gS-Ta8" secondAttribute="trailing" constant="24" id="BSG-el-ULS"/>
+                <constraint firstItem="5Lg-zE-HL9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="Cfn-0t-Yuo"/>
+                <constraint firstItem="5Lg-zE-HL9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Uit-dz-oPk"/>
+                <constraint firstItem="6B9-bR-cAV" firstAttribute="top" secondItem="5Lg-zE-HL9" secondAttribute="bottom" constant="40" id="co9-lP-4Bp"/>
+                <constraint firstItem="JCF-gS-Ta8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="o7m-h9-rRV"/>
+                <constraint firstItem="6B9-bR-cAV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="tPG-zb-a8J"/>
+                <constraint firstItem="JCF-gS-Ta8" firstAttribute="top" secondItem="6B9-bR-cAV" secondAttribute="bottom" constant="15" id="xaq-jm-I3c"/>
+            </constraints>
+            <point key="canvasLocation" x="79" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="polygon-matic-logo" width="38.400001525878906" height="33.5"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
