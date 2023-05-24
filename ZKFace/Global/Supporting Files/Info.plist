@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>NSCameraUsageDescription</key>
-	<string>Take photo</string>
+	<string>For your face ID</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Pick photo from photo library</string>
 	<key>UIApplicationSceneManifest</key>
