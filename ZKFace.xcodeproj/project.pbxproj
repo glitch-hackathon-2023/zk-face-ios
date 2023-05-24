@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B13972872A1E7CD2007F8C8D /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13972852A1E7CD2007F8C8D /* ConfirmViewController.swift */; };
+		B13972882A1E7CD2007F8C8D /* ConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B13972862A1E7CD2007F8C8D /* ConfirmViewController.xib */; };
 		B1497CCB2A1E64B9009D81D8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1497CC92A1E64B9009D81D8 /* StartViewController.swift */; };
 		B1497CCC2A1E64B9009D81D8 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1497CCA2A1E64B9009D81D8 /* StartViewController.xib */; };
 		B1497CD12A1E68BE009D81D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1497CCF2A1E68BE009D81D8 /* HomeViewController.swift */; };
@@ -65,6 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B13972852A1E7CD2007F8C8D /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		B13972862A1E7CD2007F8C8D /* ConfirmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmViewController.xib; sourceTree = "<group>"; };
 		B1497CC92A1E64B9009D81D8 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		B1497CCA2A1E64B9009D81D8 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 		B1497CCF2A1E68BE009D81D8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +140,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B13972832A1E7CBA007F8C8D /* Confirm */ = {
+			isa = PBXGroup;
+			children = (
+				B13972842A1E7CC2007F8C8D /* ViewControllers */,
+			);
+			path = Confirm;
+			sourceTree = "<group>";
+		};
+		B13972842A1E7CC2007F8C8D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B13972852A1E7CD2007F8C8D /* ConfirmViewController.swift */,
+				B13972862A1E7CD2007F8C8D /* ConfirmViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		B1497CC72A1E64A0009D81D8 /* Start */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +275,7 @@
 				B1497CC72A1E64A0009D81D8 /* Start */,
 				B1497CCD2A1E6892009D81D8 /* Home */,
 				B1497CD32A1E75C9009D81D8 /* Swap */,
+				B13972832A1E7CBA007F8C8D /* Confirm */,
 				B1631F962A188FF10050974F /* EmbeddedWebView */,
 				B1631F9C2A18A21C0050974F /* FaceCamera */,
 			);
@@ -505,6 +527,7 @@
 				B1631F9B2A1890220050974F /* EmbeddedWebViewController.xib in Resources */,
 				B1631FA12A18A2470050974F /* FaceCameraViewController.xib in Resources */,
 				B1631F142A1759EB0050974F /* Assets.xcassets in Resources */,
+				B13972882A1E7CD2007F8C8D /* ConfirmViewController.xib in Resources */,
 				B1631F122A1759EA0050974F /* Main.storyboard in Resources */,
 				B1497CD22A1E68BE009D81D8 /* HomeViewController.xib in Resources */,
 			);
@@ -540,6 +563,7 @@
 				B1631F4C2A175DC80050974F /* NSMutableAttributedString+Extension.swift in Sources */,
 				B1631F592A175F470050974F /* Notification.Name+Extension.swift in Sources */,
 				B1631F9A2A1890220050974F /* EmbeddedWebViewController.swift in Sources */,
+				B13972872A1E7CD2007F8C8D /* ConfirmViewController.swift in Sources */,
 				B1497CD72A1E7699009D81D8 /* SwapViewController.swift in Sources */,
 				B1631F522A175EDB0050974F /* UIResponder+Extension.swift in Sources */,
 				B1631F482A175C780050974F /* UIView+Extension.swift in Sources */,

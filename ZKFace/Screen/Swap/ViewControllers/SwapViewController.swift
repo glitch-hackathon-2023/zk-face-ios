@@ -16,6 +16,7 @@ class SwapViewController: UIViewController {
     }
 
     @IBAction func onClickNext(_ sender: Any) {
-        
+        let vc = ConfirmViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
