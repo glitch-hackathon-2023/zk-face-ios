@@ -60,7 +60,7 @@
                         <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="onClickImportWallet:" destination="-1" eventType="touchUpInside" id="nJz-d6-8E3"/>
+                        <action selector="onClickImportWalley:" destination="-1" eventType="touchUpInside" id="nJz-d6-8E3"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8d-sh-mjr">

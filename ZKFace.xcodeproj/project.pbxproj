@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B1497CCB2A1E64B9009D81D8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1497CC92A1E64B9009D81D8 /* StartViewController.swift */; };
 		B1497CCC2A1E64B9009D81D8 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1497CCA2A1E64B9009D81D8 /* StartViewController.xib */; };
+		B1497CD12A1E68BE009D81D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1497CCF2A1E68BE009D81D8 /* HomeViewController.swift */; };
+		B1497CD22A1E68BE009D81D8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1497CD02A1E68BE009D81D8 /* HomeViewController.xib */; };
 		B1631F0B2A1759EA0050974F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631F0A2A1759EA0050974F /* AppDelegate.swift */; };
 		B1631F0D2A1759EA0050974F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631F0C2A1759EA0050974F /* SceneDelegate.swift */; };
 		B1631F0F2A1759EA0050974F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631F0E2A1759EA0050974F /* ViewController.swift */; };
@@ -63,6 +65,8 @@
 /* Begin PBXFileReference section */
 		B1497CC92A1E64B9009D81D8 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		B1497CCA2A1E64B9009D81D8 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		B1497CCF2A1E68BE009D81D8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B1497CD02A1E68BE009D81D8 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		B1631F072A1759EA0050974F /* ZKFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1631F0A2A1759EA0050974F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1631F0C2A1759EA0050974F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +149,23 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		B1497CCD2A1E6892009D81D8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B1497CCE2A1E68AF009D81D8 /* ViewControllers */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B1497CCE2A1E68AF009D81D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1497CCF2A1E68BE009D81D8 /* HomeViewController.swift */,
+				B1497CD02A1E68BE009D81D8 /* HomeViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		B1631EFE2A1759EA0050974F = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				B1497CC72A1E64A0009D81D8 /* Start */,
+				B1497CCD2A1E6892009D81D8 /* Home */,
 				B1631F962A188FF10050974F /* EmbeddedWebView */,
 				B1631F9C2A18A21C0050974F /* FaceCamera */,
 			);
@@ -461,6 +483,7 @@
 				B1631FA12A18A2470050974F /* FaceCameraViewController.xib in Resources */,
 				B1631F142A1759EB0050974F /* Assets.xcassets in Resources */,
 				B1631F122A1759EA0050974F /* Main.storyboard in Resources */,
+				B1497CD22A1E68BE009D81D8 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +508,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1497CD12A1E68BE009D81D8 /* HomeViewController.swift in Sources */,
 				B1631F542A175F090050974F /* UIImageView+Extension.swift in Sources */,
 				B1631F502A175E840050974F /* String+Extension.swift in Sources */,
 				B1631F0F2A1759EA0050974F /* ViewController.swift in Sources */,
