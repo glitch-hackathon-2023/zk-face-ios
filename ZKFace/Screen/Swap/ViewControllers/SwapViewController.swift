@@ -11,12 +11,18 @@ class SwapViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        setLayout()
     }
 
     @IBAction func onClickNext(_ sender: Any) {
         let vc = ConfirmViewController()
         navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+extension SwapViewController {
+    private func setLayout() {
+        navigationItem.title = "wallet1 (0x1287...dfd)"
     }
 }
