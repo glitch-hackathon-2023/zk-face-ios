@@ -89,7 +89,7 @@ extension FaceCameraViewController {
         case .transaction:
             dismiss(animated: true) {
                 if let parentVC = self.parentVC {
-                    parentVC.navigationController?.pushViewController(EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/success"), animated: true)
+                    parentVC.navigationController?.pushViewController(VerifyViewController(type: .verifying), animated: true)
                 }
             }
         }
@@ -113,10 +113,11 @@ extension FaceCameraViewController: AVCapturePhotoCaptureDelegate {
         
         captureSession?.stopRunning()
         
-        guard let imageArray = FaceInferenceManager.convertUIImageToMLMultiArray(image: image) else { return }
-        
-        _ = try? FaceInferenceManager.predict(imageArray)
-        
+        if faceRecognitionType == .wallet {
+            guard let imageArray = FaceInferenceManager.convertUIImageToMLMultiArray(image: image) else { return }
+            
+            _ = try? FaceInferenceManager.predict(imageArray)
+        }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.setLoading(false)

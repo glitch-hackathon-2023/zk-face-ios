@@ -15,6 +15,12 @@
 		B1497CD22A1E68BE009D81D8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1497CD02A1E68BE009D81D8 /* HomeViewController.xib */; };
 		B1497CD72A1E7699009D81D8 /* SwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1497CD52A1E7699009D81D8 /* SwapViewController.swift */; };
 		B1497CD82A1E7699009D81D8 /* SwapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1497CD62A1E7699009D81D8 /* SwapViewController.xib */; };
+		B153B9402A21D0920046A269 /* VerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153B93E2A21D0920046A269 /* VerifyViewController.swift */; };
+		B153B9412A21D0920046A269 /* VerifyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B153B93F2A21D0920046A269 /* VerifyViewController.xib */; };
+		B153B9452A21D1270046A269 /* VerifySendProcessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153B9432A21D1270046A269 /* VerifySendProcessCell.swift */; };
+		B153B9462A21D1270046A269 /* VerifySendProcessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B153B9442A21D1270046A269 /* VerifySendProcessCell.xib */; };
+		B153B9482A21D5320046A269 /* ProcessType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153B9472A21D5320046A269 /* ProcessType.swift */; };
+		B153B94B2A21D5920046A269 /* ProcessData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153B94A2A21D5920046A269 /* ProcessData.swift */; };
 		B1631F0B2A1759EA0050974F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631F0A2A1759EA0050974F /* AppDelegate.swift */; };
 		B1631F0D2A1759EA0050974F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631F0C2A1759EA0050974F /* SceneDelegate.swift */; };
 		B1631F0F2A1759EA0050974F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1631F0E2A1759EA0050974F /* ViewController.swift */; };
@@ -75,6 +81,12 @@
 		B1497CD02A1E68BE009D81D8 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		B1497CD52A1E7699009D81D8 /* SwapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapViewController.swift; sourceTree = "<group>"; };
 		B1497CD62A1E7699009D81D8 /* SwapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwapViewController.xib; sourceTree = "<group>"; };
+		B153B93E2A21D0920046A269 /* VerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyViewController.swift; sourceTree = "<group>"; };
+		B153B93F2A21D0920046A269 /* VerifyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerifyViewController.xib; sourceTree = "<group>"; };
+		B153B9432A21D1270046A269 /* VerifySendProcessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifySendProcessCell.swift; sourceTree = "<group>"; };
+		B153B9442A21D1270046A269 /* VerifySendProcessCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerifySendProcessCell.xib; sourceTree = "<group>"; };
+		B153B9472A21D5320046A269 /* ProcessType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessType.swift; sourceTree = "<group>"; };
+		B153B94A2A21D5920046A269 /* ProcessData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessData.swift; sourceTree = "<group>"; };
 		B1631F072A1759EA0050974F /* ZKFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1631F0A2A1759EA0050974F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1631F0C2A1759EA0050974F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -208,6 +220,43 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		B153B93C2A21D05B0046A269 /* Verify */ = {
+			isa = PBXGroup;
+			children = (
+				B153B93D2A21D07E0046A269 /* ViewControllers */,
+				B153B9422A21D0FF0046A269 /* Cells */,
+				B153B9492A21D57A0046A269 /* Models */,
+			);
+			path = Verify;
+			sourceTree = "<group>";
+		};
+		B153B93D2A21D07E0046A269 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B153B93E2A21D0920046A269 /* VerifyViewController.swift */,
+				B153B93F2A21D0920046A269 /* VerifyViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B153B9422A21D0FF0046A269 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B153B9432A21D1270046A269 /* VerifySendProcessCell.swift */,
+				B153B9442A21D1270046A269 /* VerifySendProcessCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B153B9492A21D57A0046A269 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B153B9472A21D5320046A269 /* ProcessType.swift */,
+				B153B94A2A21D5920046A269 /* ProcessData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B1631EFE2A1759EA0050974F = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +325,7 @@
 				B1497CCD2A1E6892009D81D8 /* Home */,
 				B1497CD32A1E75C9009D81D8 /* Swap */,
 				B13972832A1E7CBA007F8C8D /* Confirm */,
+				B153B93C2A21D05B0046A269 /* Verify */,
 				B1631F962A188FF10050974F /* EmbeddedWebView */,
 				B1631F9C2A18A21C0050974F /* FaceCamera */,
 			);
@@ -520,6 +570,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B153B9462A21D1270046A269 /* VerifySendProcessCell.xib in Resources */,
 				B1497CD82A1E7699009D81D8 /* SwapViewController.xib in Resources */,
 				B1631F172A1759EB0050974F /* LaunchScreen.storyboard in Resources */,
 				B1497CCC2A1E64B9009D81D8 /* StartViewController.xib in Resources */,
@@ -530,6 +581,7 @@
 				B13972882A1E7CD2007F8C8D /* ConfirmViewController.xib in Resources */,
 				B1631F122A1759EA0050974F /* Main.storyboard in Resources */,
 				B1497CD22A1E68BE009D81D8 /* HomeViewController.xib in Resources */,
+				B153B9412A21D0920046A269 /* VerifyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,16 +609,20 @@
 				B1497CD12A1E68BE009D81D8 /* HomeViewController.swift in Sources */,
 				B1631F542A175F090050974F /* UIImageView+Extension.swift in Sources */,
 				B1631F502A175E840050974F /* String+Extension.swift in Sources */,
+				B153B9482A21D5320046A269 /* ProcessType.swift in Sources */,
 				B1631F0F2A1759EA0050974F /* ViewController.swift in Sources */,
 				B1631F4E2A175E350050974F /* UIStackView+Extension.swift in Sources */,
 				B1631F0B2A1759EA0050974F /* AppDelegate.swift in Sources */,
 				B1631F4C2A175DC80050974F /* NSMutableAttributedString+Extension.swift in Sources */,
+				B153B9452A21D1270046A269 /* VerifySendProcessCell.swift in Sources */,
+				B153B94B2A21D5920046A269 /* ProcessData.swift in Sources */,
 				B1631F592A175F470050974F /* Notification.Name+Extension.swift in Sources */,
 				B1631F9A2A1890220050974F /* EmbeddedWebViewController.swift in Sources */,
 				B13972872A1E7CD2007F8C8D /* ConfirmViewController.swift in Sources */,
 				B1497CD72A1E7699009D81D8 /* SwapViewController.swift in Sources */,
 				B1631F522A175EDB0050974F /* UIResponder+Extension.swift in Sources */,
 				B1631F482A175C780050974F /* UIView+Extension.swift in Sources */,
+				B153B9402A21D0920046A269 /* VerifyViewController.swift in Sources */,
 				B1631F4A2A175D5C0050974F /* UIButton+Extension.swift in Sources */,
 				B1631FA02A18A2470050974F /* FaceCameraViewController.swift in Sources */,
 				B1631FA52A18FAF60050974F /* ByofWebview.swift in Sources */,
