@@ -24,6 +24,25 @@ extension UIView {
         }
     }
     
+    @IBInspectable var borderColor: UIColor {
+        get {
+            let color = self.layer.borderColor ?? UIColor.clear.cgColor
+            return UIColor(cgColor: color)
+        }
+        set {
+            self.layer.borderColor = newValue.cgColor
+        }
+    }
+    
+    @IBInspectable var borderWidth: CGFloat {
+        get {
+            return self.layer.borderWidth
+        }
+        set {
+            self.layer.borderWidth = newValue
+        }
+    }
+    
     /// UIView 의 모서리가 둥근 정도를 설정
     /// - Parameter radius: radius 값
     /// - Parameter maskedCorners: radius를 적용할 코너 지정
