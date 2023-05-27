@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B126D12D2A21DBC90050D761 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126D12B2A21DBC90050D761 /* SuccessViewController.swift */; };
 		B126D12E2A21DBC90050D761 /* SuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B126D12C2A21DBC90050D761 /* SuccessViewController.xib */; };
+		B126D1332A21DFA90050D761 /* ConfigureProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126D1312A21DFA90050D761 /* ConfigureProtocolViewController.swift */; };
+		B126D1342A21DFA90050D761 /* ConfigureProtocolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B126D1322A21DFA90050D761 /* ConfigureProtocolViewController.xib */; };
 		B13972872A1E7CD2007F8C8D /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13972852A1E7CD2007F8C8D /* ConfirmViewController.swift */; };
 		B13972882A1E7CD2007F8C8D /* ConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B13972862A1E7CD2007F8C8D /* ConfirmViewController.xib */; };
 		B1497CCB2A1E64B9009D81D8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1497CC92A1E64B9009D81D8 /* StartViewController.swift */; };
@@ -77,6 +79,8 @@
 /* Begin PBXFileReference section */
 		B126D12B2A21DBC90050D761 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		B126D12C2A21DBC90050D761 /* SuccessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessViewController.xib; sourceTree = "<group>"; };
+		B126D1312A21DFA90050D761 /* ConfigureProtocolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureProtocolViewController.swift; sourceTree = "<group>"; };
+		B126D1322A21DFA90050D761 /* ConfigureProtocolViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigureProtocolViewController.xib; sourceTree = "<group>"; };
 		B13972852A1E7CD2007F8C8D /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		B13972862A1E7CD2007F8C8D /* ConfirmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmViewController.xib; sourceTree = "<group>"; };
 		B1497CC92A1E64B9009D81D8 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +173,23 @@
 			children = (
 				B126D12B2A21DBC90050D761 /* SuccessViewController.swift */,
 				B126D12C2A21DBC90050D761 /* SuccessViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B126D12F2A21DF890050D761 /* ConfigureProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				B126D1302A21DF960050D761 /* ViewControllers */,
+			);
+			path = ConfigureProtocol;
+			sourceTree = "<group>";
+		};
+		B126D1302A21DF960050D761 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B126D1312A21DFA90050D761 /* ConfigureProtocolViewController.swift */,
+				B126D1322A21DFA90050D761 /* ConfigureProtocolViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -348,6 +369,7 @@
 				B13972832A1E7CBA007F8C8D /* Confirm */,
 				B153B93C2A21D05B0046A269 /* Verify */,
 				B126D1292A21DBA20050D761 /* Succes */,
+				B126D12F2A21DF890050D761 /* ConfigureProtocol */,
 				B1631F962A188FF10050974F /* EmbeddedWebView */,
 				B1631F9C2A18A21C0050974F /* FaceCamera */,
 			);
@@ -593,6 +615,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B153B9462A21D1270046A269 /* VerifySendProcessCell.xib in Resources */,
+				B126D1342A21DFA90050D761 /* ConfigureProtocolViewController.xib in Resources */,
 				B1497CD82A1E7699009D81D8 /* SwapViewController.xib in Resources */,
 				B1631F172A1759EB0050974F /* LaunchScreen.storyboard in Resources */,
 				B1497CCC2A1E64B9009D81D8 /* StartViewController.xib in Resources */,
@@ -661,6 +684,7 @@
 				B1631F7B2A17BC910050974F /* FaceInferenceManager.swift in Sources */,
 				B1631FA92A1915160050974F /* ByofTabBarController.swift in Sources */,
 				B1631F562A175F230050974F /* UICollectionViewCell+Extension.swift in Sources */,
+				B126D1332A21DFA90050D761 /* ConfigureProtocolViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

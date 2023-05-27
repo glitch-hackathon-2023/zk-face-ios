@@ -71,7 +71,7 @@ extension ByofTabBarController {
     }
     
     private func createThree() -> UINavigationController {
-        let vc = EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/zkId")
+        let vc = ConfigureProtocolViewController()
         let navigationVC = UINavigationController(rootViewController: vc)
         
         vc.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "person.circle.fill"), tag: 0)
