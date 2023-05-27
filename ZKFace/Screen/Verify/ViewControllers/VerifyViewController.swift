@@ -13,6 +13,9 @@ class VerifyViewController: UIViewController {
     private var currentStep: Int = 0
     private var timer: Timer?
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descLabel: UILabel!
+    
     @IBOutlet weak var processCollectionView: UICollectionView!
     
     init(type: ProcessType) {
@@ -37,6 +40,11 @@ class VerifyViewController: UIViewController {
 extension VerifyViewController {
     private func setLayout() {
         navigationItem.title = "wallet1 (0x1287...dfd)"
+        
+        if type == .sending {
+            titleLabel.text = "Sending..."
+            descLabel.text = "You are now using Hyperlane protocol by default"
+        }
     }
     
     fileprivate func register() {

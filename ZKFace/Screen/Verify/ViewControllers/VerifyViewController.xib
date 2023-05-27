@@ -10,7 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VerifyViewController" customModule="ZKFace" customModuleProvider="target">
             <connections>
+                <outlet property="descLabel" destination="cki-Ij-sse" id="cEu-Zy-MNF"/>
                 <outlet property="processCollectionView" destination="T59-Ek-y7D" id="cC8-pt-UlF"/>
+                <outlet property="titleLabel" destination="8az-Lu-8tc" id="Sfr-gH-LDx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
