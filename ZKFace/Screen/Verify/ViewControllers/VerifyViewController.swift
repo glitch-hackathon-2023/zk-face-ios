@@ -78,7 +78,8 @@ extension VerifyViewController {
             let vc = VerifyViewController(type: .sending)
             navigationController?.pushViewController(vc, animated: true)
         case .sending:
-            navigationController?.pushViewController(EmbeddedWebViewController(webUrl: ByofWebview.baseUrl + "/success"), animated: true)
+            let vc = SuccessViewController()
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
