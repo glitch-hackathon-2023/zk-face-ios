@@ -12,12 +12,18 @@ class ConfirmViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setLayout()
     }
 
     @IBAction func onClickConfirm(_ sender: Any) {
         let vc = FaceCameraViewController(type: .transaction)
         vc.parentVC = self
         present(vc, animated: true)
+    }
+}
+
+extension ConfirmViewController {
+    private func setLayout() {
+        navigationItem.title = "wallet1 (0x1287...dfd)"
     }
 }
