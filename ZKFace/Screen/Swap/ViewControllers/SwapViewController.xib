@@ -365,7 +365,7 @@
                             </fragment>
                         </attributedString>
                         <directionalEdgeInsets key="contentInsets" top="13" leading="0.0" bottom="13" trailing="0.0"/>
-                        <color key="baseBackgroundColor" red="0.1294117719" green="0.19607841970000001" blue="0.71372550729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="baseBackgroundColor" name="#150D73"/>
                     </buttonConfiguration>
                     <connections>
                         <action selector="onClickNext:" destination="-1" eventType="touchUpInside" id="AON-T7-SAR"/>
